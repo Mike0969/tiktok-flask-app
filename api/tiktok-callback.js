@@ -12,10 +12,9 @@ export default async function handler(req, res) {
 
     const CLIENT_KEY = process.env.TIKTOK_CLIENT_KEY;
     const CLIENT_SECRET = process.env.TIKTOK_CLIENT_SECRET;
-    const REDIRECT_URI =
-      process.env.TIKTOK_REDIRECT_URI ||
-      'https://gulf-el-tiktok-oauth.vercel.app/api/tiktok-callback';
-
+   const REDIRECT_URI =
+  process.env.TIKTOK_REDIRECT_URI ||
+  'https://tiktok-flask-app1.vercel.app/api/tiktok-callback';
     const fetch = (await import('node-fetch')).default;
 
     const response = await fetch('https://open.tiktokapis.com/v2/oauth/token/', {
