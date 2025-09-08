@@ -1,0 +1,13 @@
+{
+  "name": "gulf-el-tiktok-oauth",
+  "version": "1.0.0",
+  "description": "TikTok OAuth callback for gulf-el.com",
+  "main": "api/tiktok-callback.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'no build needed'"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
